@@ -1,11 +1,14 @@
 <h1 align="center">
-  url64</br>
+  url64 <br>
   <sub>🐍 base64url decode/encode for python</sub>
 </h1>
   
 <p align="center">
-  <a href="https://travis-ci.com/DECODEproject/{project_name}">
-    <img src="https://travis-ci.com/DECODEproject/{project_name}.svg?branch=master" alt="Build Status">
+  <a href="https://travis-ci.com/puria/url64">
+    <img src="https://travis-ci.com/puria/url64.svg?branch=master" alt="Build Status">
+  </a>
+  <a href="https://codecov.io/gh/puria/url64">
+    <img src="https://codecov.io/gh/puria/url64/branch/master/graph/badge.svg" alt="coverage"/>
   </a>
   <a href="https://pypi.org/project/url64/">
     <img alt="PyPI" src="https://img.shields.io/pypi/v/url64.svg" alt="Latest release">
