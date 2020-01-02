@@ -15,15 +15,15 @@
 <br><br>
 
 <h4 align="center">
-  <a href="#floppy_disk-install">💾 Install</a>
+  <a href="#-install">💾 Install</a>
   <span> • </span>
-  <a href="#video_game-quick-start">🎮 Quick start</a>
+  <a href="#-quick-start">🎮 Quick start</a>
   <span> • </span>
-  <a href="#globe_with_meridians-links">🌐 Links</a>
+  <a href="#-links">🌐 Links</a>
   <span> • </span>
-  <a href="#busts_in_silhouette-contributing">👤 Contributing</a>
+  <a href="#-contributing">👤 Contributing</a>
   <span> • </span>
-  <a href="#briefcase-license">💼 License</a>
+  <a href="#-license">💼 License</a>
 </h4>
 
 
@@ -39,11 +39,11 @@
 <details>
  <summary><strong>🚩 Table of Contents</strong> (click to expand)</summary>
 
-* [Install](#floppy_disk-install)
-* [Quick start](#video_game-quick-start)
-* [Links](#globe_with_meridians-links)
-* [Contributing](#busts_in_silhouette-contributing)
-* [License](#briefcase-license)
+* [Install](#-install)
+* [Quick start](#-quick-start)
+* [Links](#-links)
+* [Contributing](#-contributing)
+* [License](#-license)
 </details>
 
 ***
