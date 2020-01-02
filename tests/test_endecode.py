@@ -1,6 +1,6 @@
 import pytest
 
-from url64 import url64
+import url64
 
 
 @pytest.mark.parametrize('value, expected', [
@@ -13,7 +13,9 @@ def test_decode(value, expected):
 
 
 @pytest.mark.parametrize('value, expected', [
+    ("<<???>>", "PDw_Pz8-Pg"),
     ("poll", "cG9sbA"),
+    ("Hello world!", "SGVsbG8gd29ybGQh"),
     ("MA", "TUE"),
     ("0", "MA")
 ])
