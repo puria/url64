@@ -1,3 +1,4 @@
+import json
 from base64 import urlsafe_b64encode, urlsafe_b64decode
 
 __all__ = ['encode', 'decode']
@@ -8,6 +9,9 @@ def pad(s):
 
 
 def encode(s):
+    if isinstance(s, dict):
+        s = json.dumps(s).encode()
+
     if isinstance(s, str):
         s = s.encode()
     return urlsafe_b64encode(s).decode().rstrip("=")
