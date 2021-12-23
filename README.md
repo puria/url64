@@ -2,7 +2,7 @@
   url64 <br>
   <sub>🐍 base64url decode/encode for python</sub>
 </h1>
-  
+
 <p align="center">
   <a href="https://travis-ci.com/puria/url64">
     <img src="https://travis-ci.com/puria/url64.svg?branch=master" alt="Build Status">
@@ -33,11 +33,12 @@
 `url64` is the common name for the `base64url` described in the
  [RFC4648 §5](https://tools.ietf.org/html/rfc4648#section-5).
  Since the original base64 alphabet contains invalid characters for URLs a safe
- base64 for url is suggested, replacing the 62nd (plus sign +) and 63rd 
+ base64 for url is suggested, replacing the 62nd (plus sign +) and 63rd
  (slash /) with new chars respectively the minus `-` and underscore `_` and
  removing also the padding that is represented with the equal sign `=`.
- 
+
  This a handy small utility to encode/decode strings in url64 with python3
+ very useful for JWT
 
 <details>
  <summary><strong>🚩 Table of Contents</strong> (click to expand)</summary>
@@ -64,6 +65,9 @@ import url64
 
 encoded = url64.encode('Hello world!')
 print(encoded)  # SGVsbG8gd29ybGQh
+
+dict_exncode = url64.encode(dict(alg="HS256", typ="JWT"))
+print(dict_exncode) # eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9
 ```
 
 ### decode
@@ -74,6 +78,9 @@ import url64
 
 decoded = url64.decode('SGVsbG8gd29ybGQh')
 print(decoded)  # Hello world!
+
+dict_decoded = url64.decode('eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9')
+print(dict_decoded) # {"alg": "HS256", "typ": "JWT"}
 ```
 
 ***
@@ -98,15 +105,15 @@ https://base64.guru/standards/base64url
 
 ***
 ## 💼 License
-    
+
     Copyright (c) 2019 Puria Nafisi Azizi
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
-    
+
         http://www.apache.org/licenses/LICENSE-2.0
-    
+
     Unless required by applicable law or agreed to in writing, software
     distributed under the License is distributed on an "AS IS" BASIS,
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
